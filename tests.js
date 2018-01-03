@@ -25,6 +25,6 @@ tests.forEach(test => {
 	const { method, expected } = test;
 	const { a, b } = test.input;
 	const actual = maths[method](a, b);
-	if (actual !== expected) log.fail(actual, expected);
+	if (actual !== expected) log.fail(actual, expected, this);
 	else log.pass(actual, expected);
 });
