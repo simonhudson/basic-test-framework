@@ -20,3 +20,27 @@ test('multiply() multiplies numbers', () => {
 	const expected = 15;
 	expect(result).toEqual(expected);
 });
+
+test('isEvenNumber() checks if number is even', () => {
+	const result = maths.isEvenNumber(26);
+	const expected = true;
+	expect(result).toEqual(expected);
+});
+
+test('isEvenNumber() checks if number is even', () => {
+	const result = maths.isEvenNumber(25);
+	const expected = false;
+	expect(result).toEqual(expected);
+});
+
+test('isOddNumber() checks if number is odd', () => {
+	const result = maths.isOddNumber(25);
+	const expected = true;
+	expect(result).toEqual(expected);
+});
+
+test('isOddNumber() checks if number is odd', () => {
+	const result = maths.isOddNumber(26);
+	const expected = false;
+	expect(result).toEqual(expected);
+});

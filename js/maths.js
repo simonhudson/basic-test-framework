@@ -1,26 +1,34 @@
 'use strict';
 
-const checkInput = (a, b) => {
-	if (!a || !b || isNaN(a) || isNaN(b)) return undefined;
-}
-
 const sum = (a, b) => {
-	checkInput(a, b);
+	if (!a || !b || isNaN(a) || isNaN(b)) return undefined;
 	return a + b;
 };
 
 const subtract = (a, b) => {
-	checkInput(a, b);
+	if (!a || !b || isNaN(a) || isNaN(b)) return undefined;
 	return a - b;
 };
 
 const multiply = (a, b) => {
-	checkInput(a, b);
+	if (!a || !b || isNaN(a) || isNaN(b)) return undefined;
 	return a * b;
+};
+
+const isEvenNumber = (a) => {
+	if (!a || isNaN(a)) return undefined;
+	return (a % 2 === 0);
+}
+
+const isOddNumber = (a) => {
+	if (!a || isNaN(a)) return undefined;
+	return (a % 2 !== 0);
 }
 
 module.exports = {
-	sum,
+	isEvenNumber,
+	isOddNumber,
+	multiply,
 	subtract,
-	multiply
+	sum,
 };
