@@ -18,12 +18,12 @@ const multiply = (a, b) => {
 const isEvenNumber = (a) => {
 	if (!a || isNaN(a)) return undefined;
 	return (a % 2 === 0);
-}
+};
 
 const isOddNumber = (a) => {
 	if (!a || isNaN(a)) return undefined;
 	return (a % 2 !== 0);
-}
+};
 
 module.exports = {
 	isEvenNumber,
