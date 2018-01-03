@@ -31,29 +31,29 @@ test('divide() divides numbers', () => {
 	expect(result).toEqual(expected);
 });
 
-test('isEvenNumber() checks if number is even', () => {
-	const result = maths.isEvenNumber(26);
+test('isEven checks if number is even', () => {
+	const result = maths.isEven(26);
 	const expected = true;
 	expect(result).toBeType('boolean');
 	expect(result).toEqual(expected);
 });
 
-test('isEvenNumber() checks if number is even', () => {
-	const result = maths.isEvenNumber(25);
+test('isEven checks if number is even', () => {
+	const result = maths.isEven(25);
 	const expected = false;
 	expect(result).toBeType('boolean');
 	expect(result).toEqual(expected);
 });
 
-test('isOddNumber() checks if number is odd', () => {
-	const result = maths.isOddNumber(25);
+test('isOdd checks if number is odd', () => {
+	const result = maths.isOdd(25);
 	const expected = true;
 	expect(result).toBeType('boolean');
 	expect(result).toEqual(expected);
 });
 
-test('isOddNumber() checks if number is odd', () => {
-	const result = maths.isOddNumber(26);
+test('isOdd checks if number is odd', () => {
+	const result = maths.isOdd(26);
 	const expected = false;
 	expect(result).toBeType('boolean');
 	expect(result).toEqual(expected);
