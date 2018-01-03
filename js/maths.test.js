@@ -28,25 +28,31 @@ test('divide() divides numbers', () => {
 });
 
 test('isEven checks if number is even', () => {
-	const result = maths.isEven(26);
-	const expected = true;
-	expect(result).toEqual(expected);
-});
 
-test('isEven checks if number is even', () => {
-	const result = maths.isEven(25);
-	const expected = false;
-	expect(result).toEqual(expected);
-});
+	const tests = [
+		{ input: 25, expected: false },
+		{ input: 26, expected: true }
+	];
 
-test('isOdd checks if number is odd', () => {
-	const result = maths.isOdd(25);
-	const expected = true;
-	expect(result).toEqual(expected);
+	tests.forEach(test => {
+		const result = maths.isEven(test.input);
+		const expected = test.expected;
+		expect(result).toEqual(expected);
+	});
+
 });
 
 test('isOdd checks if number is odd', () => {
-	const result = maths.isOdd(26);
-	const expected = false;
-	expect(result).toEqual(expected);
+
+	const tests = [
+		{ input: 25, expected: true },
+		{ input: 26, expected: false }
+	];
+
+	tests.forEach(test => {
+		const result = maths.isOdd(test.input);
+		const expected = test.expected;
+		expect(result).toEqual(expected);
+	});
+
 });
