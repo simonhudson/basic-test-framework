@@ -2,14 +2,29 @@
 
 const log = require('./log');
 const maths = require('./js/maths');
-let actual, expected;
 
-actual = maths.sum(5, 2);
-expected = 7;
-if (actual !== expected) log.fail(actual, expected);
-else log.pass(actual, expected);
+const tests = [
+	{
+		method: 'sum',
+		input: { a: 4, b: 3 },
+		expected: 7
+	},
+	{
+		method: 'subtract',
+		input: { a: 4, b: 3 },
+		expected: 1
+	},
+	{
+		method: 'multiply',
+		input: { a: 4, b: 3 },
+		expected: 12
+	}
+];
 
-actual = maths.subtract(10, 2);
-expected = 8;
-if (actual !== expected) log.fail(actual, expected);
-else log.pass(actual, expected);
+tests.forEach(test => {
+	const { method, expected } = test;
+	const { a, b } = test.input;
+	const actual = maths[method](a, b);
+	if (actual !== expected) log.fail(actual, expected);
+	else log.pass(actual, expected);
+});

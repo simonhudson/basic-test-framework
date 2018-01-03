@@ -1,16 +1,26 @@
 'use strict';
 
-const sum = (a, b) => {
+const checkInput = (a, b) => {
 	if (!a || !b || isNaN(a) || isNaN(b)) return undefined;
+}
+
+const sum = (a, b) => {
+	checkInput(a, b);
 	return a + b;
 };
 
 const subtract = (a, b) => {
-	if (!a || !b || isNaN(a) || isNaN(b)) return undefined;
+	checkInput(a, b);
 	return a - b;
 };
 
+const multiply = (a, b) => {
+	checkInput(a, b);
+	return a * b;
+}
+
 module.exports = {
 	sum,
-	subtract
+	subtract,
+	multiply
 };
