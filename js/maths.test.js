@@ -24,6 +24,13 @@ test('multiply() multiplies numbers', () => {
 	expect(result).toEqual(expected);
 });
 
+test('divide() divides numbers', () => {
+	const result = maths.divide(12, 3);
+	const expected = 4;
+	expect(result).toBeType('number');
+	expect(result).toEqual(expected);
+});
+
 test('isEvenNumber() checks if number is even', () => {
 	const result = maths.isEvenNumber(26);
 	const expected = true;

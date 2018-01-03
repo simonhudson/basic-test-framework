@@ -15,6 +15,11 @@ const multiply = (a, b) => {
 	return a * b;
 };
 
+const divide = (a, b) => {
+	if (!a || !b || isNaN(a) || isNaN(b)) return undefined;
+	return a / b;
+};
+
 const isEvenNumber = (a) => {
 	if (!a || isNaN(a)) return undefined;
 	return (a % 2 === 0);
@@ -26,6 +31,7 @@ const isOddNumber = (a) => {
 };
 
 module.exports = {
+	divide,
 	isEvenNumber,
 	isOddNumber,
 	multiply,
