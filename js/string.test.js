@@ -1,4 +1,4 @@
-const { expect, test } = require('../framework');
+const { expect, test } = require('../expect');
 const string = require('./string');
 
 test('uppercaseFirstChar() converts first character of string to uppercase', () => {

@@ -1,10 +1,10 @@
 'use strict';
 
-const { expect, test } = require('../framework');
+const { expect, test } = require('../expect');
 const maths = require('./maths');
 
-test('sum() adds numbers', () => {
-	const result = maths.sum(5, 3);
+test('add() adds numbers', () => {
+	const result = maths.add(5, 3);
 	const expected = 8;
 	expect(result).toEqual(expected);
 });

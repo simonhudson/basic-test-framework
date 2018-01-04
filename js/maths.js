@@ -4,7 +4,7 @@ const checkInput = (a, b) => {
 	if (!a || (a && isNaN(a)) || (b && isNaN(b))) return undefined;
 }
 
-const sum = (a, b) => {
+const add = (a, b) => {
 	checkInput(a, b);
 	return a + b;
 };
@@ -41,11 +41,11 @@ const getPercentage = (x, y) => {
 }
 
 module.exports = {
+	add,
 	divide,
 	getPercentage,
 	isEven,
 	isOdd,
 	multiply,
 	subtract,
-	sum,
 };
