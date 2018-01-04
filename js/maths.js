@@ -34,8 +34,15 @@ const isOdd = (a) => {
 	return (a % 2 !== 0);
 };
 
+const getPercentage = (x, y) => {
+	if (!x || !y || typeof x !== 'number' || typeof y !== 'number') return null;
+	const value = x / y * 100;
+	return parseInt(value.toFixed());
+}
+
 module.exports = {
 	divide,
+	getPercentage,
 	isEven,
 	isOdd,
 	multiply,
