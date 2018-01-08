@@ -15,7 +15,7 @@ test('uppercaseFirstChar() converts first character of string to uppercase', () 
 
 });
 
-test('replaceSpaceWithDelimiter() replaces spaces in string with specified delimiter', () => {
+test('replaceWhitespaceWithDelimiter() replaces spaces in string with specified delimiter', () => {
 
 	const originalString = 'lorem Ipsum  dolor   foo';
 
@@ -37,7 +37,7 @@ test('replaceSpaceWithDelimiter() replaces spaces in string with specified delim
 
 	tests.forEach(test => {
 		const { input, expected } = test;
-		const result = string.replaceSpaceWithDelimiter(input.string, input.delimiter);
+		const result = string.replaceWhitespaceWithDelimiter(input.string, input.delimiter);
 		expect(result).toEqual(expected);
 	});
 
