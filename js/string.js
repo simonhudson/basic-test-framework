@@ -10,7 +10,15 @@ const replaceWhitespaceWithDelimiter = (string, delimiter = '-') => {
 	return string.replace(/\s+/g, delimiter);
 };
 
+const toTitleCase = string => {
+	if (!string || typeof string !== 'string') return undefined;
+	let returnValue = '';
+	string.split(/\s+/g).forEach(item => returnValue += `${uppercaseFirstChar(item)} `);
+	return returnValue.trim();
+};
+
 module.exports = {
 	replaceWhitespaceWithDelimiter,
-	uppercaseFirstChar
+	uppercaseFirstChar,
+	toTitleCase
 };

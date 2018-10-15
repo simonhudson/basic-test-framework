@@ -1,7 +1,7 @@
 'use strict';
 
-const { expect, test } = require('../expect');
-const maths = require('./maths');
+const { expect, test } = require('../../expect');
+const maths = require('../maths');
 
 test('add() adds numbers', () => {
 	const result = maths.add(5, 3);
