@@ -24,12 +24,12 @@ const divide = (a, b) => {
 	return a / b;
 };
 
-const isEven = (a) => {
+const isEven = a => {
 	checkInput(a);
 	return (a % 2 === 0);
 };
 
-const isOdd = (a) => {
+const isOdd = a => {
 	checkInput(a);
 	return (a % 2 !== 0);
 };
