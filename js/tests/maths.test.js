@@ -6,27 +6,27 @@ const maths = require('../maths');
 module.exports = () => {
 	
 	test('add() adds numbers', () => {
-		const result = maths.add(5, 3);
+		const actual = maths.add(5, 3);
 		const expected = 8;
-		expect(result).toEqual(expected);
+		expect(actual).toEqual(expected);
 	});
 
 	test('subtract() subtracts numbers', () => {
-		const result = maths.subtract(5, 3);
+		const actual = maths.subtract(5, 3);
 		const expected = 2;
-		expect(result).toEqual(expected);
+		expect(actual).toEqual(expected);
 	});
 
 	test('multiply() multiplies numbers', () => {
-		const result = maths.multiply(5, 3);
+		const actual = maths.multiply(5, 3);
 		const expected = 15;
-		expect(result).toEqual(expected);
+		expect(actual).toEqual(expected);
 	});
 
 	test('divide() divides numbers', () => {
-		const result = maths.divide(12, 3);
+		const actual = maths.divide(12, 3);
 		const expected = 4;
-		expect(result).toEqual(expected);
+		expect(actual).toEqual(expected);
 	});
 
 	test('isEven() checks if number is even', () => {
@@ -37,9 +37,9 @@ module.exports = () => {
 		];
 
 		tests.forEach(test => {
-			const result = maths.isEven(test.input);
+			const actual = maths.isEven(test.input);
 			const expected = test.expected;
-			expect(result).toEqual(expected);
+			expect(actual).toEqual(expected);
 		});
 
 	});
@@ -52,9 +52,9 @@ module.exports = () => {
 		];
 
 		tests.forEach(test => {
-			const result = maths.isOdd(test.input);
+			const actual = maths.isOdd(test.input);
 			const expected = test.expected;
-			expect(result).toEqual(expected);
+			expect(actual).toEqual(expected);
 		});
 
 	});
@@ -106,8 +106,8 @@ module.exports = () => {
 
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const result = maths.getPercentage(input.x, input.y);
-			expect(result).toEqual(expected);
+			const actual = maths.getPercentage(input.x, input.y);
+			expect(actual).toEqual(expected);
 		});
 
 	});
@@ -150,8 +150,8 @@ module.exports = () => {
 
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const result = maths.getAverage(input);
-			expect(result).toEqual(expected);
+			const actual = maths.getAverage(input);
+			expect(actual).toEqual(expected);
 		});
 		
 	});

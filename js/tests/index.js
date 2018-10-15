@@ -1,2 +1,3 @@
-require('./maths.test')();
-require('./string.test')();
+require('./date.test')();
+// require('./maths.test')();
+// require('./string.test')();

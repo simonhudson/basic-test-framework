@@ -15,5 +15,8 @@
     "bugs": {
         "url": "https://github.com/simonhudson/basic-test-framework/issues"
     },
-    "homepage": "https://github.com/simonhudson/basic-test-framework#readme"
+    "homepage": "https://github.com/simonhudson/basic-test-framework#readme",
+    "dependencies": {
+        "moment": "^2.22.2"
+    }
 }

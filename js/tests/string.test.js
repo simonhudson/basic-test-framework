@@ -11,8 +11,8 @@ module.exports = () => {
 
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const result = string.uppercaseFirstChar(input);
-			expect(result).toEqual(expected);
+			const actual = string.uppercaseFirstChar(input);
+			expect(actual).toEqual(expected);
 		});
 
 	});
@@ -39,8 +39,8 @@ module.exports = () => {
 
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const result = string.replaceWhitespaceWithDelimiter(input.string, input.delimiter);
-			expect(result).toEqual(expected);
+			const actual = string.replaceWhitespaceWithDelimiter(input.string, input.delimiter);
+			expect(actual).toEqual(expected);
 		});
 
 	});
@@ -74,8 +74,8 @@ module.exports = () => {
 
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const result = string.toTitleCase(input.string);
-			expect(result).toEqual(expected);
+			const actual = string.toTitleCase(input.string);
+			expect(actual).toEqual(expected);
 		});
 
 	});
