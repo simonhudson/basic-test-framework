@@ -18,5 +18,10 @@
     "homepage": "https://github.com/simonhudson/basic-test-framework#readme",
     "dependencies": {
         "moment": "^2.22.2"
+    },
+    "config": {
+        "ghooks": {
+            "pre-push": "npm run test"
+        }
     }
 }
