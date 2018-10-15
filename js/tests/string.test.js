@@ -1,7 +1,9 @@
-const { expect, test } = require('../../expect');
+const { expect, logHeading, test } = require('../../expect');
 const string = require('../string');
 
 module.exports = () => {
+	
+	logHeading(__filename);
 	
 	test('uppercaseFirstChar() converts first character of string to uppercase', () => {
 

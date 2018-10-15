@@ -1,9 +1,11 @@
 'use strict';
 
-const { expect, test } = require('../../expect');
+const { expect, logHeading, test } = require('../../expect');
 const maths = require('../maths');
 
 module.exports = () => {
+	
+	logHeading(__filename);
 	
 	test('add() adds numbers', () => {
 		const actual = maths.add(5, 3);
