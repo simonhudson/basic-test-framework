@@ -1,6 +1,6 @@
 'use strict';
 
-const checkInput = require('./checkInput');
+const checkInput = require('../checkInput');
 
 module.exports = value => {
 	checkInput(value);

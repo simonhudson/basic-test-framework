@@ -1,6 +1,6 @@
 'use strict';
 
-const isValidDate = require('./isValidDate');
+const isValidDate = require('../isValidDate');
 
 module.exports = value => {
 	if (!value || typeof value !== 'string') return null;
