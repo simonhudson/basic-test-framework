@@ -5,9 +5,9 @@ const getDifferenceFromNow = require('./index');
 
 const NOW = new Date();
 const now = {
-	day: NOW.getDay(),
-	month: NOW.getMonth(),
-	year: NOW.getFullYear()
+	day: NOW.getUTCDate(),
+	month: NOW.getUTCMonth() + 1,
+	year: NOW.getUTCFullYear()
 };
 
 module.exports = () => {
