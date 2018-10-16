@@ -2,7 +2,7 @@
 
 const uppercaseFirstCharacter = require('../string/uppercaseFirstCharacter')
 const TESTS = {
-	date: ['getMonthName', 'isValidDate', 'toIsoString'],
+	date: ['getDayName', 'getMonthName', 'isValidDate', 'toIsoString'],
 	maths: ['add', 'divide', 'getAverage', 'getPercentage', 'isEven', 'isOdd', 'multiply', 'subtract'],
 	string: ['replaceWhitespaceWithDelimiter', 'toTitleCase', 'uppercaseFirstCharacter']
 };
