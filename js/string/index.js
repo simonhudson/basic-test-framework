@@ -1,7 +1,8 @@
 'use strict';
 
 module.exports = {
-	replaceWhitespaceWithDelimiter: require('./replaceWhitespaceWithDelimiter'),
+	replaceWhiteSpaceWithDelimiter: require('./replaceWhiteSpaceWithDelimiter'),
+	stripWhiteSpace: require('./stripWhiteSpace'),
 	toTitleCase: require('./toTitleCase'),
 	uppercaseFirstCharacter: require('./uppercaseFirstCharacter'),
 };

@@ -4,6 +4,11 @@ const { expect, test } = require('../../../expect');
 const isOver18Years = require('./index');
 
 const NOW = new Date();
+const now = {
+	day: NOW.getUTCDay(),
+	month: NOW.getUTCMonth(),
+	year: NOW.getUTCFullYear()
+};
 
 module.exports = () => {
 	
@@ -13,8 +18,8 @@ module.exports = () => {
 			{ input: null, expected: null },
 			{ input: 'hello', expected: null },
 			{ input: '13', expected: null },
-			{ input: `29 April ${NOW.getUTCFullYear() - 1}`, expected: false },
-			{ input: `29 April ${NOW.getUTCFullYear() - 19}`, expected: true }
+			{ input: `${now.day} ${now.month} ${now.year - 1}`, expected: false },
+			{ input: `${now.day} ${now.month} ${now.year - 19}`, expected: true }
 		];
 	
 		tests.forEach(test => {

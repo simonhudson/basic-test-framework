@@ -1,11 +1,11 @@
 'use strict';
 
 const { expect, test } = require('../../../expect');
-const replaceWhitespaceWithDelimiter = require('./index');
+const replaceWhiteSpaceWithDelimiter = require('./index');
 
 module.exports = () => {
 
-	test('replaceWhitespaceWithDelimiter() replaces spaces in string with specified delimiter', () => {
+	test('replaceWhiteSpaceWithDelimiter() replaces spaces in string with specified delimiter', () => {
 		
 		const ORIGINAL_STRING = 'lorem Ipsum  dolor   foo';
 
@@ -27,7 +27,7 @@ module.exports = () => {
 
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const actual = replaceWhitespaceWithDelimiter(input.string, input.delimiter);
+			const actual = replaceWhiteSpaceWithDelimiter(input.string, input.delimiter);
 			expect(actual).toEqual(expected);
 		});
 

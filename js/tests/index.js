@@ -4,7 +4,7 @@ const uppercaseFirstCharacter = require('../string/uppercaseFirstCharacter')
 const TESTS = {
 	date: ['getDayName', 'getDifferenceFromNow', 'getMonthName', 'isOver18Years', 'isValidDate', 'toIsoString'],
 	maths: ['add', 'divide', 'getAverage', 'getPercentage', 'isEven', 'isOdd', 'multiply', 'subtract'],
-	string: ['replaceWhitespaceWithDelimiter', 'toTitleCase', 'uppercaseFirstCharacter']
+	string: ['replaceWhiteSpaceWithDelimiter', 'stripWhiteSpace', 'toTitleCase', 'uppercaseFirstCharacter']
 };
 
 for (const key in TESTS) {
