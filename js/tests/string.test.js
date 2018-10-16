@@ -5,7 +5,7 @@ module.exports = () => {
 	
 	logHeading(__filename);
 	
-	test('uppercaseFirstChar() converts first character of string to uppercase', () => {
+	test('uppercaseFirstCharacter() converts first character of string to uppercase', () => {
 
 		const tests = [
 			{ input: 'lorem Ipsum', expected: 'Lorem Ipsum' }
@@ -13,7 +13,7 @@ module.exports = () => {
 
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const actual = string.uppercaseFirstChar(input);
+			const actual = string.uppercaseFirstCharacter(input);
 			expect(actual).toEqual(expected);
 		});
 

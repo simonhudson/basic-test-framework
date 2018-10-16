@@ -1,16 +1,10 @@
 'use strict';
 
-const moment = require('moment');
+const isValidDate = require('./isValidDate');
 
-const isValidDate = date => date instanceof Date && !isNaN(date);
-
-const toIsoString = value => {
+module.exports = value => {
 	if (!value || typeof value !== 'string') return null;
 	const date = new Date(value);
 	if (!isValidDate(date)) return null;
 	return date.toISOString();
-};
-
-module.exports = {
-	toIsoString,
 };
