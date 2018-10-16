@@ -11,3 +11,4 @@ for (const key in TESTS) {
 	console.log(`\n${uppercaseFirstCharacter(key)}\n----------`);
 	TESTS[key].forEach(test => require(`../${key}/${test}/test`)());
 };
+console.log('\n');
