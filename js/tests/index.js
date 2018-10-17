@@ -1,10 +1,11 @@
 'use strict';
 
-const uppercaseFirstCharacter = require('../string/uppercaseFirstCharacter')
+const uppercaseFirstCharacter = require('../string/uppercaseFirstCharacter');
+
 const TESTS = {
 	date: ['getDayName', 'getDifferenceBetweenDates', 'getMonthName', 'isOver18Years', 'isValidDate', 'toIsoString'],
 	maths: ['add', 'divide', 'getAverage', 'getPercentage', 'isEven', 'isOdd', 'multiply', 'subtract'],
-	string: ['replaceWhiteSpaceWithDelimiter', 'stripWhiteSpace', 'toTitleCase', 'uppercaseFirstCharacter']
+	string: ['beginsWithVowel', 'defineArticle', 'replaceWhiteSpaceWithDelimiter', 'stripWhiteSpace', 'toTitleCase', 'uppercaseFirstCharacter']
 };
 
 for (const key in TESTS) {
