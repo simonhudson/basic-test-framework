@@ -17,10 +17,10 @@ const MONTHS = [
 
 module.exports = (value, truncate) => {
 	value = parseInt(value, 10);
-	if (isNaN(value) || (value > 11 || value < 0)) return null;
-	value = value -1;
+	if (isNaN(value) || (value > 12 || value < 0)) return null;
+	const index = value - 1;
 	truncate = truncate ? truncate : false;
-	let monthName = MONTHS[value];
+	let monthName = MONTHS[index];
 	if (truncate && typeof truncate === 'boolean') monthName = monthName.substr(0, 3);
 	return monthName;
 };
