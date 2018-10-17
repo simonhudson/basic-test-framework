@@ -1,8 +1,8 @@
 'use strict';
 
-const beginsWithVowel = require('../beginsWithVowel');
+const VOWELS = ['a', 'e', 'i', 'o', 'u'];
 
 module.exports = str => {
 	if (!str || typeof str !== 'string') return null;
-	return beginsWithVowel(str) ? 'an' : 'a';
+	return VOWELS.includes(str.charAt(0).toLowerCase()) ? 'an' : 'a';
 };

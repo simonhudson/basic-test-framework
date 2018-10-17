@@ -1,10 +1,8 @@
 'use strict';
 
-const uppercaseFirstCharacter = require('../uppercaseFirstCharacter');
-
 module.exports = string => {
 	if (!string || typeof string !== 'string') return undefined;
 	let returnValue = '';
-	string.split(/\s+/g).forEach(item => returnValue += `${uppercaseFirstCharacter(item)} `);
+	string.split(/\s+/g).forEach(item => returnValue += `${item.charAt(0).toUpperCase() + item.slice(1)} `);
 	return returnValue.trim();
 };

@@ -2,9 +2,9 @@
 
 const isValidDate = require('../isValidDate');
 
-module.exports = value => {
-	if (!value || typeof value !== 'string') return null;
-	const date = new Date(value);
-	if (!isValidDate(date)) return null;
+module.exports = date => {
+	if (!date || typeof date !== 'string') return null;
+	date = new Date(date);
+	if (!date instanceof Date || isNaN(date)) return null;
 	return date.toISOString();
 };

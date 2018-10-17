@@ -1,8 +1,6 @@
 'use strict';
 
-const checkInput = require('../checkInput');
-
 module.exports = (valueA, valueB) => {
-	checkInput(valueA, valueB);
+	if (!valueA || (valueA && isNaN(valueA)) || (valueB && isNaN(valueB))) return null;
 	return valueA - valueB;
 };

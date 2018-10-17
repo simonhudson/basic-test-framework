@@ -1,11 +1,12 @@
 'use strict';
 
-const getDifferenceBetweenDates = require('../getDifferenceBetweenDates');
-const isValidDate = require('../isValidDate');
 const moment = require('moment');
 
 module.exports = date => {
-	const diff = getDifferenceBetweenDates(date, 'years');
+	if (!date) return null;
+	date = new Date(date);
+	if (!date instanceof Date || isNaN(date)) return null;
+	const diff = Math.floor(moment.duration(moment().diff(date)).as('years'));
 	if (!diff || isNaN(diff)) return null;
 	return diff >= 18;
 };
