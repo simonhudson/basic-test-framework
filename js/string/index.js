@@ -1,8 +1,7 @@
 'use strict';
 
-module.exports = {
-	replaceWhiteSpaceWithDelimiter: require('./replaceWhiteSpaceWithDelimiter'),
-	stripWhiteSpace: require('./stripWhiteSpace'),
-	toTitleCase: require('./toTitleCase'),
-	uppercaseFirstCharacter: require('./uppercaseFirstCharacter'),
-};
+const exportObj = {};
+
+require('./methods').forEach(method => exportObj[method] = require(`./${method}`));
+
+module.exports = exportObj;

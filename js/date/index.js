@@ -1,7 +1,7 @@
 'use strict';
 
-module.exports = {
-	isValidDate: require('./isValidDate'),
-	getMonthName: require('./getMonthName'),
-	toIsoString: require('./toIsoString'),
-};
+const exportObj = {};
+
+require('./methods').forEach(method => exportObj[method] = require(`./${method}`));
+
+module.exports = exportObj;
