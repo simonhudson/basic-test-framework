@@ -1,6 +1,7 @@
 'use strict';
 
 const UTILITIES = [
+	'array',
 	'date',
 	'maths',
 	'string'
