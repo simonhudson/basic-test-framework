@@ -1,6 +1,10 @@
 'use strict';
 
-const UTILITIES = ['date', 'maths', 'string'];
+const UTILITIES = [
+	'date',
+	'maths',
+	'string'
+];
 const TESTS = {};
 
 UTILITIES.forEach(item => TESTS[item] = require(`../${item}/methods`));
