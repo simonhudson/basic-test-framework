@@ -5,7 +5,7 @@ const toIsoString = require('./index');
 
 module.exports = () => {
 	
-	test('toIsoString() creates ISO string from date string', () => {
+	test('toIsoString()', 'creates ISO string from date string', () => {
 	
 		const tests = [
 			{ input: null, expected: null },

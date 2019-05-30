@@ -5,7 +5,7 @@ const beginsWithVowel = require('./index');
 
 module.exports = () => {
 	
-	test('beginsWithVowel() checks if string begins with a vowel', () => {
+	test('beginsWithVowel()', 'checks if string begins with a vowel', () => {
 	
 		const tests = [
 			{ input: null, expected: false },

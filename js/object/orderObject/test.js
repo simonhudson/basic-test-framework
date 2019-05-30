@@ -5,7 +5,7 @@ const orderObject = require('./index');
 
 module.exports = () => {
 	
-	test('orderObject() order object based on key name', function() {
+	test('orderObject()', 'order object based on key name', function() {
 
 	const tests = [
 			{ input: 'string', expected: null },

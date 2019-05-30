@@ -5,7 +5,7 @@ const getMonthName = require('./index');
 
 module.exports = () => {
 	
-	test('getMonthName() returns month name from numeric value', () => {
+	test('getMonthName()', 'returns month name from numeric value', () => {
 	
 		const tests = [
 			{ input: { value: null, truncate: null }, expected: null },

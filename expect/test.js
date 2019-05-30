@@ -1,13 +1,18 @@
 'use strict';
 
+const logSymbols = require('log-symbols');
 const SPACING = '  ';
 
-module.exports = (title, callback) => {
+module.exports = (title, description, callback) => {
+	
+	const logFeedback = state =>
+		console.log(`${SPACING}${state === 'pass' ? `${logSymbols.success} PASS:` : `${logSymbols.error} FAIL:`} ${title} ${description}`);
+	
 	try {
 		callback();
-		console.log(`${SPACING}PASS: ${title}`);
+		logFeedback('pass');
 	} catch (error) {
-		console.error(`${SPACING}FAIL: ${title}`);
+		logFeedback('error');
 		console.error(error);
 	}
 };

@@ -5,7 +5,7 @@ const isValidDate = require('./index');
 
 module.exports = () => {
 	
-	test('isValidDate() checks value is a valid date', () => {
+	test('isValidDate()', 'checks value is a valid date', () => {
 	
 		const tests = [
 			{ input: null, expected: false },

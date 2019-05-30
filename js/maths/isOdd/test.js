@@ -5,7 +5,7 @@ const isOdd = require('./index');
 
 module.exports = () => {
 
-	test('isOdd() checks if number is odd', () => {
+	test('isOdd()', 'checks if number is odd', () => {
 
 		const tests = [
 			{ input: 25, expected: true },

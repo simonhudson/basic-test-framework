@@ -17,6 +17,7 @@
     },
     "homepage": "https://github.com/simonhudson/basic-test-framework#readme",
     "dependencies": {
+        "log-symbols": "^3.0.0",
         "moment": "^2.22.2"
     },
     "husky": {

@@ -5,7 +5,7 @@ const defineArticle = require('./index');
 
 module.exports = () => {
 	
-	test('defineArticle() defines article (e.g "a" / "an") for a string', () => {
+	test('defineArticle()', 'defines article (e.g "a" / "an") preceding a string', () => {
 	
 		const tests = [
 			{ input: { str: null }, expected: null },

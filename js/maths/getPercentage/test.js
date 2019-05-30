@@ -5,7 +5,7 @@ const getPercentage = require('./index');
 
 module.exports = () => {
 	
-	test('getPercentage() calculates x as a percentage of y', () => {
+	test('getPercentage()', 'calculates x as a percentage of y', () => {
 
 		const tests = [
 			{

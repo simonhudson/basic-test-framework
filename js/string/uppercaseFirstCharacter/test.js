@@ -5,7 +5,7 @@ const uppercaseFirstCharacter = require('./index');
 
 module.exports = () => {
 	
-	test('uppercaseFirstCharacter() converts first character of string to uppercase', () => {
+	test('uppercaseFirstCharacter()', 'converts first character of string to uppercase', () => {
 
 		const tests = [
 			{ input: 'lorem Ipsum', expected: 'Lorem Ipsum' }

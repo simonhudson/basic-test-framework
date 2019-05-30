@@ -5,7 +5,7 @@ const arrayHasItems = require('./index');
 
 module.exports = () => {
 	
-	test('arrayHasItems() checks if array has items', function() {
+	test('arrayHasItems()', 'checks if array has items', function() {
 
 		const tests = [
 			{ input: null, expected: false },

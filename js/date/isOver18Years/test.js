@@ -12,7 +12,7 @@ const now = {
 
 module.exports = () => {
 	
-	test('isOver18Years() checks if date is more than or equal to 18 years from now', () => {
+	test('isOver18Years()', 'checks if date is more than or equal to 18 years from now', () => {
 	
 		const tests = [
 			{ input: null, expected: null },

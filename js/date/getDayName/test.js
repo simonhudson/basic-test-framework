@@ -5,7 +5,7 @@ const getDayName = require('./index');
 
 module.exports = () => {
 	
-	test('getDayName() returns day name from numeric value', () => {
+	test('getDayName()', 'returns day name from numeric value', () => {
 	
 		const tests = [
 			{ input: { value: null, truncate: null }, expected: null },

@@ -5,7 +5,7 @@ const toTitleCase = require('./index');
 
 module.exports = () => {
 
-	test('toTitleCase() converts string to title case', () => {
+	test('toTitleCase()', 'converts string to title case', () => {
 
 		const ORIGINAL_STRING = 'lorem Ipsum dolor foo';
 

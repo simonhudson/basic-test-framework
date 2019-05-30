@@ -12,7 +12,7 @@ module.exports = () => {
 		year: NOW.getUTCFullYear()
 	};
 	
-	test('getDifferenceBetweenDates() gets difference between dates as specified value', () => {
+	test('getDifferenceBetweenDates()', 'gets difference between dates as specified value', () => {
 	
 		const tests = [
 			{ input: { date: null, unit: 'years' }, expected: null },

@@ -5,7 +5,7 @@ const getAverage = require('./index');
 
 module.exports = () => {
 
-	test('getAverage() calculates average value from array of values', () => {
+	test('getAverage()', 'calculates average value from array of values', () => {
 		const tests = [
 			{ input: null, expected: null },
 			{ input: 1, expected: null },

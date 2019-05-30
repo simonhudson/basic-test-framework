@@ -5,7 +5,7 @@ const stripWhiteSpace = require('./index');
 
 module.exports = () => {
 
-	test('stripWhiteSpace() strip white space from string', () => {
+	test('stripWhiteSpace()', 'strip white space from string', () => {
 		
 		const ORIGINAL_STRING = ' lorem Ipsum  dolor   foo  ';
 

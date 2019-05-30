@@ -5,7 +5,7 @@ const replaceWhiteSpaceWithDelimiter = require('./index');
 
 module.exports = () => {
 
-	test('replaceWhiteSpaceWithDelimiter() replaces spaces in string with specified delimiter', () => {
+	test('replaceWhiteSpaceWithDelimiter()', 'replaces spaces in string with specified delimiter', () => {
 		
 		const ORIGINAL_STRING = 'lorem Ipsum  dolor   foo';
 

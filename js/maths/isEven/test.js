@@ -5,7 +5,7 @@ const isEven = require('./index');
 
 module.exports = () => {
 	
-	test('isEven() checks if number is even', () => {
+	test('isEven()', 'checks if number is even', () => {
 
 		const tests = [
 			{ input: 25, expected: false },

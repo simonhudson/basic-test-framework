@@ -5,7 +5,7 @@ const cleanUpObject = require('./index');
 
 module.exports = () => {
 	
-	test('cleanUpObject() recursively removes null/undefined/empty strings from object', function() {
+	test('cleanUpObject()', 'recursively removes null/undefined/empty strings from object', function() {
 
 		const tests = [
 			{ input: null, expected: null },
