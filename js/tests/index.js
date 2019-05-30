@@ -4,6 +4,7 @@ const UTILITIES = [
 	'array',
 	'date',
 	'maths',
+	'object',
 	'string'
 ];
 const TESTS = {};

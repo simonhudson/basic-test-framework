@@ -2,7 +2,7 @@
 
 'use strict';
 
-module.exports = object {
+module.exports = function cleanUpObject(object) {
 	if (typeof object === 'object') {
 		for (let key in object) {
 			if (object[key] === '' || object[key] === null || object[key] === undefined) delete object[key];
