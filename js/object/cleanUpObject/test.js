@@ -15,10 +15,10 @@ module.exports = () => {
 			{ input: {}, expected: {} },
 			{
 				input: {
-					key1: '1', key2: 2, key3: null, key4: '', key5: [1,2,3], key6: undefined
+					key1: '1', key2: 2, key3: null, key4: '', key5: [1,2,3], key6: undefined, key7: {}
 				},
 				expected: {
-					key1: '1', key2: 2, key5: [1,2,3]
+					key1: '1', key2: 2, key5: [1,2,3], key7: {}
 				}
 			}
 		];
