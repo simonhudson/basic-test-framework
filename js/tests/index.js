@@ -1,5 +1,7 @@
 'use strict';
 
+const { logHeading } = require('../../expect');
+
 const UTILITIES = [
 	'array',
 	'date',
@@ -12,7 +14,7 @@ const TESTS = {};
 UTILITIES.forEach(item => TESTS[item] = require(`../${item}/methods`));
 
 for (const key in TESTS) {
-	console.log(`\n${key}\n----------`);
+	logHeading(key);
 	TESTS[key].forEach(test => require(`../${key}/${test}/test`)());
 };
 console.log(`\n`);
