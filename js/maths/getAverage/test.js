@@ -13,6 +13,7 @@ module.exports = () => {
 			{ input: [], expected: null },
 			{ input: ['string', 'string1', 'string2', 'string3'], expected: null },
 			{ input: {}, expected: null },
+			{ input: [5], expected: 5 },
 			{ input: [1, 2, 3, 4, 5], expected: 3 },
 			{ input: [17, 52, 300, 4, -1], expected: 74 }
 		];

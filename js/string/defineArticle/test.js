@@ -11,6 +11,7 @@ module.exports = () => {
 			{ input: null, expected: null },
 			{ input: true, expected: null },
 			{ input: 10, expected: null },
+			{ input: '', expected: null },
 			{ input: 'Hello', expected: 'a' },
 			{ input: 'Goodbye', expected: 'a' },
 			{ input: 'Error', expected: 'an' },

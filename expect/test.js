@@ -1,11 +1,13 @@
 'use strict';
 
+const SPACING = '  ';
+
 module.exports = (title, callback) => {
 	try {
 		callback();
-		console.log(`  PASS: ${title}`);
+		console.log(`${SPACING}PASS: ${title}`);
 	} catch (error) {
-		console.error(`  FAIL: ${title}`);
+		console.error(`${SPACING}FAIL: ${title}`);
 		console.error(error);
 	}
 };
