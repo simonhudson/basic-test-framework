@@ -2,19 +2,49 @@
 
 const EXCLUSIONS = [
 	'a',
+	'above',
+	'across',
+	'after',
 	'an',
+	'and',
+	'around',
+	'at',
+	'before',
+	'behind',
+	'below',
+	'beside',
+	'between',
+	'but',
+	'by',
+	'down',
+	'during',
+	'for',
+	'for',
+	'from',
 	'in',
+	'inside',
+	'nor',
 	'of',
-	'the'
+	'off',
+	'on',
+	'onto',
+	'or',
+	'out',
+	'so',
+	'the',
+	'through',
+	'to',
+	'under',
+	'up',
+	'with',
+	'yet',
 ];
-
-const convertString = str => `${str.charAt(0).toUpperCase() + str.slice(1)} `;
 
 module.exports = string => {
 	if (!string || typeof string !== 'string') return null;
 	let returnValue = '';
 	string.split(/\s+/g).forEach((item, index) => {
-		if (index === 0 || !EXCLUSIONS.includes(item.toLowerCase())) returnValue += convertString(item);
+		if (index === 0 || !EXCLUSIONS.includes(item.toLowerCase())) returnValue += `${str.charAt(0).toUpperCase() + str.slice(1)} `;
 		else returnValue += `${item} `;
 	});
 	return returnValue.trim();

@@ -26,7 +26,7 @@ module.exports = () => {
 			},
 			{
 				input: { string: 'the last of the mohicans in a cupboard under the stairs' },
-				expected: 'The Last of the Mohicans in a Cupboard Under the Stairs'
+				expected: 'The Last of the Mohicans in a Cupboard under the Stairs'
 			}
 		];
 
