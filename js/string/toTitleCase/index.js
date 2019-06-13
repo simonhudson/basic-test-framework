@@ -44,7 +44,7 @@ module.exports = string => {
 	if (!string || typeof string !== 'string') return null;
 	let returnValue = '';
 	string.split(/\s+/g).forEach((item, index) => {
-		if (index === 0 || !EXCLUSIONS.includes(item.toLowerCase())) returnValue += `${str.charAt(0).toUpperCase() + str.slice(1)} `;
+		if (index === 0 || !EXCLUSIONS.includes(item.toLowerCase())) returnValue += `${item.charAt(0).toUpperCase() + item.slice(1)} `;
 		else returnValue += `${item} `;
 	});
 	return returnValue.trim();
