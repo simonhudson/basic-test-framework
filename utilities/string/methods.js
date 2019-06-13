@@ -2,9 +2,10 @@
 
 module.exports = [
 	'beginsWithVowel',
-	'escapeHtml',
 	'defineArticle',
+	'escapeHtml',
 	'replaceWhiteSpaceWithDelimiter',
+	'stripHtmlTags',
 	'stripWhiteSpace',
 	'toTitleCase',
 	'unescapeHtml',
