@@ -1,5 +1,5 @@
 {
-    "name": "basic-test-framework",
+    "name": "js-utilities",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -8,14 +8,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/simonhudson/basic-test-framework.git"
+        "url": "git+https://github.com/simonhudson/js-utilities.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/simonhudson/basic-test-framework/issues"
+        "url": "https://github.com/simonhudson/js-utilities/issues"
     },
-    "homepage": "https://github.com/simonhudson/basic-test-framework#readme",
+    "homepage": "https://github.com/simonhudson/js-utilities#readme",
     "dependencies": {
         "log-symbols": "^3.0.0",
         "moment": "^2.22.2"
