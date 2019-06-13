@@ -7,8 +7,6 @@ module.exports = () => {
 
 	test('toTitleCase()', 'converts string to title case', () => {
 
-		const ORIGINAL_STRING = 'the last of the mohicans in a cupboard under the stairs';
-
 		const tests = [
 			{
 				input: { string: 1 },
@@ -27,7 +25,7 @@ module.exports = () => {
 				expected: null
 			},
 			{
-				input: { string: ORIGINAL_STRING },
+				input: { string: 'the last of the mohicans in a cupboard under the stairs' },
 				expected: 'The Last of the Mohicans in a Cupboard Under the Stairs'
 			}
 		];
