@@ -12,6 +12,18 @@ module.exports = () => {
 		const tests = [
 			{
 				input: {
+					string: [1,2,3],
+				},
+				expected: [1,2,3]
+			},
+			{
+				input: {
+					string: true, delimiter: '_'
+				},
+				expected: true
+			},
+			{
+				input: {
 					string: ORIGINAL_STRING,
 				},
 				expected: 'lorem-Ipsum-dolor-foo'
@@ -27,8 +39,9 @@ module.exports = () => {
 
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const actual = replaceWhiteSpaceWithDelimiter(input.string, input.delimiter);
-			expect(actual).toEqual(expected);
+			const { string, delimiter } = input;
+			const actual = replaceWhiteSpaceWithDelimiter(string, delimiter);
+			expect(actual).toDeepEqual(expected);
 		});
 
 	});

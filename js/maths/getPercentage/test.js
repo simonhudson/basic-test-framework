@@ -52,7 +52,8 @@ module.exports = () => {
 
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const actual = getPercentage(input.x, input.y);
+			const { x, y } = input;
+			const actual = getPercentage(x, y);
 			expect(actual).toEqual(expected);
 		});
 

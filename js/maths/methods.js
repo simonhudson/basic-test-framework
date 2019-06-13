@@ -5,8 +5,6 @@ module.exports = [
 	'divide',
 	'getAverage',
 	'getPercentage',
-	'isEven',
-	'isOdd',
 	'multiply',
 	'subtract'
 ];

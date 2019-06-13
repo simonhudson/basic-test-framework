@@ -7,6 +7,7 @@ const UTILITIES = [
 	'date',
 	'maths',
 	'object',
+	'number',
 	'string'
 ];
 const TESTS = {};

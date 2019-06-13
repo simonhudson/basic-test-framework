@@ -1,6 +1,6 @@
-// Recursively cleans up empty strings, null values, and undefined values in an object.
-
 'use strict';
+
+// Recursively cleans up empty strings, null values, and undefined values in an object.
 
 module.exports = function cleanUpObject(object) {
 	if (typeof object === 'object') {

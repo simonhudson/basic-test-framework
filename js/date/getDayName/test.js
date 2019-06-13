@@ -20,7 +20,8 @@ module.exports = () => {
 	
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const actual = getDayName(input.value, input.truncate);
+			const { value, truncate } = input;
+			const actual = getDayName(value, truncate);
 			expect(actual).toEqual(expected);
 		});
 	});

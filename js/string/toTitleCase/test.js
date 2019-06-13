@@ -12,19 +12,19 @@ module.exports = () => {
 		const tests = [
 			{
 				input: { string: 1 },
-				expected: undefined
+				expected: null
 			},
 			{
 				input: { string: true },
-				expected: undefined
+				expected: null
 			},
 			{
 				input: { string: [1,2,3] },
-				expected: undefined
+				expected: null
 			},
 			{
 				input: { string: {foo: 1 } },
-				expected: undefined
+				expected: null
 			},
 			{
 				input: { string: ORIGINAL_STRING },
@@ -34,7 +34,8 @@ module.exports = () => {
 
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const actual = toTitleCase(input.string);
+			const { string } = input;
+			const actual = toTitleCase(string);
 			expect(actual).toEqual(expected);
 		});
 

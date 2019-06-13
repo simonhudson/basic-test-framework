@@ -20,7 +20,8 @@ module.exports = () => {
 	
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const actual = getMonthName(input.value, input.truncate);
+			const { value, truncate } = input;
+			const actual = getMonthName(value, truncate);
 			expect(actual).toEqual(expected);
 		});
 	});

@@ -27,7 +27,8 @@ module.exports = () => {
 	
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const actual = getDifferenceBetweenDates(input.date, input.unit, input.startDate);
+			const { date, unit, startDate } = input;
+			const actual = getDifferenceBetweenDates(date, unit, startDate);
 			expect(actual).toEqual(expected);
 		});
 	});
