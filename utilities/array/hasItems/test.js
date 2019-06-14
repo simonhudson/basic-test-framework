@@ -1,11 +1,11 @@
 'use strict';
 
 const { expect, test } = require('../../../expect');
-const arrayHasItems = require('./index');
+const hasItems = require('./index');
 
 module.exports = () => {
 	
-	test('arrayHasItems()', 'checks if array has items', function() {
+	test('hasItems()', 'checks if array has items', function() {
 
 		const tests = [
 			{ input: null, expected: false },
@@ -19,7 +19,7 @@ module.exports = () => {
 
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const actual = arrayHasItems(input);
+			const actual = hasItems(input);
 			expect(actual).toEqual(expected);
 		});
 		

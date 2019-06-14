@@ -1,11 +1,11 @@
 'use strict';
 
 const { expect, test } = require('../../../expect');
-const cleanUpObject = require('./index');
+const cleanUp = require('./index');
 
 module.exports = () => {
 	
-	test('cleanUpObject()', 'recursively removes null/undefined/empty strings from object', function() {
+	test('cleanUp()', 'recursively removes null/undefined/empty strings from object', function() {
 
 		const tests = [
 			{ input: null, expected: null },
@@ -25,7 +25,7 @@ module.exports = () => {
 
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const actual = cleanUpObject(input);
+			const actual = cleanUp(input);
 			expect(actual).toDeepEqual(expected);
 		});
 		

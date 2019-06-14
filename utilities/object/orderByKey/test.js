@@ -1,11 +1,11 @@
 'use strict';
 
 const { expect, test } = require('../../../expect');
-const orderObject = require('./index');
+const orderByKey = require('./index');
 
 module.exports = () => {
 	
-	test('orderObject()', 'order object based on key name', function() {
+	test('orderByKey()', 'order object based on key name', function() {
 
 	const tests = [
 			{ input: 'string', expected: null },
@@ -29,7 +29,7 @@ module.exports = () => {
 
 		tests.forEach(test => {
 			const { input, expected } = test;
-			const actual = orderObject(input);
+			const actual = orderByKey(input);
 			expect(actual).toDeepEqual(expected);
 		});
 		
