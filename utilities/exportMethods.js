@@ -1,7 +1,7 @@
 'use strict';
 
-module.exports = className => {
+module.exports = utility => {
 	const exportObj = {};
-	require(`./${className}/methods`).forEach(method => exportObj[method] = require(`./${className}/${method}`));
+	require(`./${utility}/methods`).forEach(method => exportObj[method] = require(`./${utility}/${method}`));
 	return exportObj;
 };
